@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="work_name">work_name</string>
+    <string name="workspaces">Workspaces</string>
+    <string name="board_name">Board name</string>
+    <string name="add_board">Add board</string>
+    <string name="member_name">Member</string>
+    <string name="member_email">Member Email</string>
+    <string name="add_member">Add member</string>
+    <string name="hotline">Hotline: 0386789994</string>
+    <string name="text_help">Nếu bạn gặp sự cố trong quá trình sử dụng hãy liên hệ ngay với chúng tôi để được hỗ trợ.</string>
+    <string name="text_help2">Xin cảm ơn!</string>
+
+</resources>

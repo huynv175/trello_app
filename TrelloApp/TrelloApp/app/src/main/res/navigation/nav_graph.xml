@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="gst.trainingcourse.trelloapp.view.intro.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="gst.trainingcourse.trelloapp.view.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="gst.trainingcourse.trelloapp.view.login.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="gst.trainingcourse.trelloapp.view.home.HomeFragment"
+        android:label="board"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_introFragment"
+            app:destination="@id/introFragment"
+            app:popUpTo="@id/introFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addBoardFragment"
+            app:destination="@id/addBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="gst.trainingcourse.trelloapp.view.board.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_boardFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+        <action
+            android:id="@+id/action_boardFragment_to_memberFragment"
+            app:destination="@id/memberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="gst.trainingcourse.trelloapp.view.card.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" >
+    </fragment>
+    <fragment
+        android:id="@+id/addBoardFragment"
+        android:name="gst.trainingcourse.trelloapp.view.home.AddBoardFragment"
+        android:label="AddBoardFragment" >
+        <action
+            android:id="@+id/action_addBoardFragment_to_boardFragment"
+            app:destination="@id/boardFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMemberFragment"
+        android:name="gst.trainingcourse.trelloapp.view.board.member.AddMemberFragment"
+        android:label="fragment_add_member"
+        tools:layout="@layout/fragment_add_member" />
+    <fragment
+        android:id="@+id/memberFragment"
+        android:name="gst.trainingcourse.trelloapp.view.board.member.MemberFragment"
+        android:label="fragment_member"
+        tools:layout="@layout/fragment_member" >
+        <action
+            android:id="@+id/action_memberFragment_to_addMemberFragment"
+            app:destination="@id/addMemberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workspaceFragment"
+        android:name="gst.trainingcourse.trelloapp.view.workspace.WorkspaceFragment"
+        android:label="fragment_workspace"
+        tools:layout="@layout/fragment_workspace" >
+        <action
+            android:id="@+id/action_workspaceFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="gst.trainingcourse.trelloapp.view.help.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>

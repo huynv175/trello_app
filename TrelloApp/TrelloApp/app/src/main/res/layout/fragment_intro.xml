@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_intro_background"
+    tools:context=".view.intro.IntroFragment">
+
+    <ImageView
+        android:id="@+id/imvTrello"
+        android:layout_width="@dimen/width_image_trello"
+        android:layout_height="@dimen/height_image_trello"
+        android:layout_marginTop="@dimen/margin_20"
+        android:contentDescription="@string/image_trello_logo"
+        android:src="@drawable/trello_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_image_theme"
+        android:layout_marginTop="@dimen/margin_20"
+        android:contentDescription="@string/image_theme"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trello_hero_illustration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvTrello" />
+
+    <TextView
+        android:id="@+id/tv_intro_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/text_intro_first"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvTheme" />
+
+    <TextView
+        android:id="@+id/tv_intro_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/text_intro_second"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro_first" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro_second">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16"
+            android:text="@string/text_start"
+            android:background="@drawable/button_sign_up_style"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_16" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:background="@drawable/button_login_style"
+            android:padding="@dimen/padding_16"
+            android:textColor="@color/white"
+            android:text="@string/text_login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_policy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="center"
+            android:text="@string/text_policy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_background"
+    tools:context=".view.login.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_actionbar_login"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_action_bar_custom"
+        android:background="@color/color_action_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imv_action_bar_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:text="@string/login_action_bar_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_description_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_25"
+        android:gravity="center"
+        android:text="@string/text_description_login"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_actionbar_login" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        app:cardCornerRadius="@dimen/radius_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description_login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_16">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_email_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ed_sig_up_height"
+                    android:hint="@string/text_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/text_size_16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_password_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ed_sig_up_height"
+                    android:hint="@string/text_password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/text_size_16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/button_conner_style"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="@string/text_login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

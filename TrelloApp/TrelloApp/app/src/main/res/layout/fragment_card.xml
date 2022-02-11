@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:padding="@dimen/padding_8">
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/card_detail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/card_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:padding="@dimen/padding_16"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@color/color_sign_up_login"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_8"
+            android:src="@drawable/ic_baseline_timer_24" />
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16"
+            android:text="@string/start_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:paddingHorizontal="@dimen/padding_48"
+        android:paddingVertical="@dimen/padding_16"
+        android:text="@string/end_time"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/margin_8"-->
+<!--        android:background="#88609e"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="@dimen/margin_8"-->
+<!--            android:src="@drawable/ic_baseline_label_24" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/card_detail_label"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="@dimen/padding_16"-->
+<!--            android:text="@string/label"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_16" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/margin_8"-->
+<!--        android:background="@color/selected_update_card_color"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="@dimen/margin_8"-->
+<!--            android:src="@drawable/ic_baseline_person_add_24" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/card_detail_member"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="@dimen/padding_16"-->
+<!--            android:text="@string/member"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_16" />-->
+
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

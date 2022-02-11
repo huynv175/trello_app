@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <targetSelectedWithDropDown>
+      <Target>
+        <type value="QUICK_BOOT_TARGET" />
+        <deviceKey>
+          <Key>
+<<<<<<< HEAD
+            <type value="VIRTUAL_DEVICE_PATH" />
+            <value value="C:\Users\Lenovo\.android\avd\Pixel_4_API_26.avd" />
+          </Key>
+        </deviceKey>
+      </Target>
+    </targetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2021-08-20T03:21:44.139020100Z" />
+=======
+            <type value="SERIAL_NUMBER" />
+            <value value="11d824c5" />
+          </Key>
+        </deviceKey>
+      </Target>
+    </runningDeviceTargetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2021-08-22T19:05:43.609104100Z" />
+>>>>>>> e42b27b8a40cf3239fc60a8ab54288f932754a57
+  </component>
+</project>

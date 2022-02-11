@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "148406315631",
+    "project_id": "trello-clone-704c8",
+    "storage_bucket": "trello-clone-704c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148406315631:android:4e5d35d9f990679d43bb9a",
+        "android_client_info": {
+          "package_name": "gst.trainingcourse.trelloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148406315631-3khblmbckjh9r6u7f34059q4je1ele0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf74hI-WekwLzVMORqB3CvjoEHNc2sozM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148406315631-3khblmbckjh9r6u7f34059q4je1ele0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
